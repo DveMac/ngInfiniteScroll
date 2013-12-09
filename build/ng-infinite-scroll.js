@@ -1,9 +1,6 @@
-/* ng-infinite-scroll - v1.0.0 - 2013-05-13 */
-var mod;
+/* ng-infinite-scroll - v1.0.0 - 2013-12-09 */
 
-mod = angular.module('infinite-scroll', []);
-
-mod.directive('infiniteScroll', [
+angular.module('infinite-scroll', []).directive('infiniteScroll', [
   '$rootScope', '$window', '$timeout', function($rootScope, $window, $timeout) {
     return {
       link: function(scope, elem, attrs) {
