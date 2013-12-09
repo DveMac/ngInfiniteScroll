@@ -1,6 +1,5 @@
-mod = angular.module('infinite-scroll', [])
-
-mod.directive 'infiniteScroll', ['$rootScope', '$window', '$timeout', ($rootScope, $window, $timeout) ->
+angular.module('infinite-scroll', [])
+.directive 'infiniteScroll', ['$rootScope', '$window', '$timeout', ($rootScope, $window, $timeout) ->
   link: (scope, elem, attrs) ->
     $window = angular.element($window)
 
